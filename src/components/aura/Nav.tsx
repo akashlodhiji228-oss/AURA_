@@ -90,7 +90,7 @@ export function Nav() {
               </ProjectBriefButton>
               <div className="flex items-center justify-between px-1 pt-1">
                 <a
-                  href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+                  href="https://www.instagram.com/_aura.forge/"
                   target="_blank"
                   rel="noreferrer"
                   className="label-mono text-muted-foreground transition-colors hover:text-primary"

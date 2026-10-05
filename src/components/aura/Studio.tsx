@@ -219,7 +219,7 @@ export function Contact() {
             <div>
               <p className="label-mono text-muted-foreground">Instagram</p>
               <a
-                href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+                href="https://www.instagram.com/_aura.forge/"
                 target="_blank"
                 rel="noreferrer"
                 className="font-display text-lg font-bold tracking-tight transition-colors hover:text-primary sm:text-xl md:text-2xl"
@@ -250,7 +250,7 @@ export function Footer() {
           <div className="flex flex-col gap-3">
             <span className="label-mono text-primary">Social</span>
             {[
-              ["Instagram", "https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="],
+              ["Instagram", "https://www.instagram.com/_aura.forge/"],
               ["LinkedIn", "https://www.linkedin.com/company/auraforge"],
               ["X", "https://x.com/auraforge"],
             ].map(([label, href]) => (
@@ -282,7 +282,7 @@ export function Footer() {
               Email
             </a>
             <a
-              href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+              href="https://www.instagram.com/_aura.forge/"
               target="_blank"
               rel="noreferrer"
               className="label-mono text-muted-foreground transition-colors hover:text-foreground"
