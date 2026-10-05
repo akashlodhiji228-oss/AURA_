@@ -65,7 +65,7 @@ export function Hero() {
           <span className="text-muted-foreground">×</span> Growth
         </p>
 
-        <h1 className="display-xl text-[clamp(2.75rem,10vw,8rem)] leading-[0.94] md:leading-[0.88]">
+        <h1 className="display-xl text-[11vw] sm:text-[clamp(4rem,8vw,8rem)] leading-[0.94] md:leading-[0.88]">
           {["We don't", "make websites."].map((line, index) => (
             <span key={line} className="block overflow-hidden">
               <motion.span
