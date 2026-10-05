@@ -72,7 +72,7 @@ export function Team() {
           <p className="label-mono mb-6 text-primary md:mb-8">
             The founding team
           </p>
-          <h2 className="display-xl text-4xl sm:text-6xl md:text-[7vw] leading-[0.95] md:leading-[0.86]">
+          <h2 className="display-xl text-[clamp(2.25rem,7vw,7rem)] leading-[0.95] md:leading-[0.86]">
             <Reveal>Built by people</Reveal>
             <Reveal delay={0.07}>
               <span className="text-primary">who build.</span>

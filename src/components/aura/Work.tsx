@@ -108,7 +108,7 @@ export function Work() {
     <section id="work" className="border-t border-border px-5 py-24 md:px-10 md:py-36">
       <div className="mx-auto max-w-[1600px]">
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
-          <h2 className="display-xl text-[10vw] md:text-[5.6vw]">
+          <h2 className="display-xl text-[clamp(3.5rem,8vw,6rem)]">
             <Reveal>Built.</Reveal>
             <Reveal delay={0.06}>
               <span className="text-primary">Not promised.</span>

@@ -34,10 +34,10 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="grain relative min-h-screen w-full overflow-x-clip bg-background text-foreground">
+    <div className="grain relative min-h-screen w-full bg-background text-foreground">
       <CustomCursor />
       <Nav />
-      <main className="w-full overflow-x-clip">
+      <main className="w-full">
         <Hero />
         <Philosophy />
         <Forge />

@@ -181,7 +181,7 @@ export function Contact() {
         aria-hidden
       />
       <div className="relative mx-auto max-w-[1600px]">
-        <h2 className="display-xl text-4xl sm:text-6xl md:text-[6.3vw] leading-[0.95] md:leading-[0.9]">
+        <h2 className="display-xl text-[clamp(2.25rem,6.3vw,6.5rem)] leading-[0.95] md:leading-[0.9]">
           <Reveal>Got something</Reveal>
           <Reveal delay={0.06}>
             <span className="text-primary">worth forging?</span>
