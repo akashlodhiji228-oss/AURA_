@@ -36,7 +36,7 @@ export function Hero() {
           width={1600}
           height={1200}
           fetchPriority="high"
-          className="h-[112%] w-[112%] -translate-x-[6%] -translate-y-[6%] object-cover opacity-55"
+          className="max-w-none h-[112%] w-[112%] -translate-x-[6%] -translate-y-[6%] object-cover opacity-55"
           animate={{
             x: `${-6 + (hydrated ? pointer.x * 2.5 : 0)}%`,
             y: `${-6 + (hydrated ? pointer.y * 2.5 : 0)}%`,
