@@ -57,7 +57,7 @@ export function Hero() {
 
       <motion.div
         style={{ y: textY, opacity: fade }}
-        className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-center px-5 py-24 sm:justify-end sm:pb-20 sm:pt-32 md:px-10"
+        className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-end px-5 pb-24 pt-32 sm:pb-20 md:px-10"
       >
         <p className="label-mono mb-4 text-primary sm:mb-8">
           Brand <span className="text-muted-foreground">×</span> Technology{" "}
@@ -65,7 +65,7 @@ export function Hero() {
           <span className="text-muted-foreground">×</span> Growth
         </p>
 
-        <h1 className="display-xl text-[clamp(3.5rem,12vw,8rem)] leading-[0.94] md:leading-[0.88]">
+        <h1 className="display-xl text-[clamp(2.75rem,10vw,8rem)] leading-[0.94] md:leading-[0.88]">
           {["We don't", "make websites."].map((line, index) => (
             <span key={line} className="block overflow-hidden">
               <motion.span
