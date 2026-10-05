@@ -57,9 +57,9 @@ export function Hero() {
 
       <motion.div
         style={{ y: textY, opacity: fade }}
-        className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-end px-5 pb-16 pt-28 sm:pb-20 sm:pt-32 md:px-10 md:pb-20"
+        className="relative mx-auto flex min-h-[100svh] max-w-[1600px] flex-col justify-center px-5 py-24 sm:justify-end sm:pb-20 sm:pt-32 md:px-10"
       >
-        <p className="label-mono mb-8 text-primary">
+        <p className="label-mono mb-4 text-primary sm:mb-8">
           Brand <span className="text-muted-foreground">×</span> Technology{" "}
           <span className="text-muted-foreground">×</span> AI{" "}
           <span className="text-muted-foreground">×</span> Growth
@@ -96,7 +96,7 @@ export function Hero() {
           ))}
         </h1>
 
-        <div className="mt-8 flex flex-col gap-5 border-t border-border pt-6 sm:mt-12 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:pt-8">
+        <div className="mt-6 flex flex-col gap-4 border-t border-border pt-5 sm:mt-12 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:pt-8">
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
             <Magnetic className="w-full sm:w-auto">
               <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5 sm:w-auto sm:px-7 sm:py-4">
