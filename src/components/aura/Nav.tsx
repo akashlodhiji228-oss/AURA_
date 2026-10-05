@@ -29,8 +29,15 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-5 md:px-10">
-        <a href="#top" className="font-display text-sm font-bold tracking-[0.28em] uppercase">
-          Aura_Forge<sup className="text-primary">®</sup>
+        <a href="#top" className="group flex items-center gap-2.5 font-display text-sm font-bold tracking-[0.28em] uppercase">
+          <img
+            src="/aura-favicon-32.png?v=4"
+            alt="Aura Forge Logo"
+            width={24}
+            height={24}
+            className="h-6 w-6 rounded-full border border-border/80 transition-transform duration-300 group-hover:scale-110"
+          />
+          <span>Aura_Forge<sup className="text-primary">®</sup></span>
         </a>
 
         <nav className="hidden items-center gap-10 md:flex">
