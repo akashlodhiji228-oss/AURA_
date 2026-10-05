@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <rect width="512" height="512" rx="112" fill="#0A0A0A"/>
+  <rect width="512" height="512" rx="116" fill="#0A0A0A"/>
   <!-- Outer Grey Accent Arc -->
-  <path d="M 94.7 180.8 A 178 178 0 0 1 167.0 101.8" fill="none" stroke="#8E9196" stroke-width="11" stroke-linecap="round"/>
+  <path d="M 82.0 174.9 A 192 192 0 0 1 160.0 89.7" fill="none" stroke="#8E9196" stroke-width="12" stroke-linecap="round"/>
   <!-- Concentric White Arc -->
-  <path d="M 227.5 417.5 A 164 164 0 0 1 155.0 126.8" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  <path d="M 227.5 417.5 A 164 164 0 0 1 155.0 126.8" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
   <!-- Main 3/4 Lime Green Ring -->
   <path d="M 256.0 124.0 A 132 132 0 1 1 124.0 256.0" fill="none" stroke="#B6FF2E" stroke-width="22" stroke-linecap="butt"/>
   <!-- Center 4-Pointed Star -->
-  <path d="M 256 178 Q 266 246 334 256 Q 266 266 256 334 Q 246 266 178 256 Q 246 246 256 178 Z M 256 247 A 9 9 0 1 0 256 265 A 9 9 0 1 0 256 247 Z" fill="#B6FF2E" fill-rule="evenodd"/>
+  <path d="M 256 176 Q 267 245 336 256 Q 267 267 256 336 Q 245 267 176 256 Q 245 245 256 176 Z M 256 246.5 A 9.5 9.5 0 1 0 256 265.5 A 9.5 9.5 0 1 0 256 246.5 Z" fill="#B6FF2E" fill-rule="evenodd"/>
 </svg>

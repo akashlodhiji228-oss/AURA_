@@ -216,6 +216,17 @@ export function Contact() {
                 officialauraforge@gmail.com
               </a>
             </div>
+            <div>
+              <p className="label-mono text-muted-foreground">Instagram</p>
+              <a
+                href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+                target="_blank"
+                rel="noreferrer"
+                className="font-display text-lg font-bold tracking-tight transition-colors hover:text-primary sm:text-xl md:text-2xl"
+              >
+                @_aura.forge
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -239,7 +250,7 @@ export function Footer() {
           <div className="flex flex-col gap-3">
             <span className="label-mono text-primary">Social</span>
             {[
-              ["Instagram", "https://instagram.com/officialauraforge"],
+              ["Instagram", "https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="],
               ["LinkedIn", "https://www.linkedin.com/company/auraforge"],
               ["X", "https://x.com/auraforge"],
             ].map(([label, href]) => (
@@ -269,6 +280,14 @@ export function Footer() {
               className="label-mono text-muted-foreground transition-colors hover:text-foreground"
             >
               Email
+            </a>
+            <a
+              href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+              target="_blank"
+              rel="noreferrer"
+              className="label-mono text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Instagram
             </a>
           </div>
         </div>

@@ -31,7 +31,7 @@ export function Nav() {
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-5 py-5 md:px-10">
         <a href="#top" className="group flex items-center gap-2.5 font-display text-sm font-bold tracking-[0.28em] uppercase">
           <img
-            src="/aura-favicon-32.png?v=4"
+            src="/aura-64.png?v=5"
             alt="Aura Forge Logo"
             width={24}
             height={24}
@@ -84,10 +84,28 @@ export function Nav() {
                 {link.label}
               </a>
             ))}
-            <div className="border-t border-border pt-4">
+            <div className="flex flex-col gap-3 border-t border-border pt-4">
               <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5">
                 Start a project <span aria-hidden>→</span>
               </ProjectBriefButton>
+              <div className="flex items-center justify-between px-1 pt-1">
+                <a
+                  href="https://www.instagram.com/_aura.forge?stkn=MWdzcmttNnZsOWd3aQ=="
+                  target="_blank"
+                  rel="noreferrer"
+                  className="label-mono text-muted-foreground transition-colors hover:text-primary"
+                >
+                  Instagram @_aura.forge ↗
+                </a>
+                <a
+                  href="https://wa.me/917869461895"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="label-mono text-muted-foreground transition-colors hover:text-primary"
+                >
+                  WhatsApp ↗
+                </a>
+              </div>
             </div>
           </nav>
         </div>
