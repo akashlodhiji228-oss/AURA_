@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="aura-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c8f54a" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#c8f54a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0b0b0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="aura-lime" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d6ff5c"/>
+      <stop offset="100%" stop-color="#b8f226"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Squircle -->
+  <rect width="64" height="64" rx="14" fill="#0B0B0A"/>
+  <!-- Ambient Aura Glow -->
+  <circle cx="32" cy="32" r="26" fill="url(#aura-glow)"/>
+  <!-- Subtle Border -->
+  <rect x="0.75" y="0.75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#252523" stroke-width="1.5"/>
+  <!-- Bold Geometric 'A' Mark -->
+  <path d="M32 12 L49 52 H40.5 L36.2 41.5 H27.8 L23.5 52 H15 L32 12 Z M32 23.2 L29 33.6 H35 L32 23.2 Z" fill="url(#aura-lime)"/>
+</svg>

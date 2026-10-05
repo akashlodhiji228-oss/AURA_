@@ -78,7 +78,7 @@ function Panel({ project, index, onOpen }: { project: (typeof projects)[number];
       >
         <FadeIn>
           <p className="label-mono text-primary">{project.number} — Selected</p>
-          <h3 className="display-xl mt-4 text-4xl md:text-[2.6vw]">{project.name}</h3>
+          <h3 className="display-xl mt-4 text-3xl sm:text-4xl md:text-[2.6vw]">{project.name}</h3>
           <p className="label-mono mt-4 text-muted-foreground">{project.category}</p>
           <p className="mt-6 max-w-md font-editorial text-xl leading-snug text-foreground/85 md:text-2xl">
             {project.outcome}
@@ -135,7 +135,7 @@ export function Work() {
               </div>
               <div className="p-6 md:p-10">
                 <p className="label-mono text-primary">Case study / {selected.number}</p>
-                <SheetTitle className="display-xl mt-4 text-5xl md:text-7xl">{selected.name}</SheetTitle>
+                <SheetTitle className="display-xl mt-4 text-3xl sm:text-5xl md:text-7xl">{selected.name}</SheetTitle>
                 <SheetDescription className="label-mono mt-4 text-muted-foreground">{selected.category}</SheetDescription>
                 <p className="mt-8 font-editorial text-2xl leading-snug text-foreground">{selected.outcome}</p>
 

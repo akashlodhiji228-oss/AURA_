@@ -65,7 +65,7 @@ export function Hero() {
           <span className="text-muted-foreground">×</span> Growth
         </p>
 
-        <h1 className="display-xl text-[11vw] leading-[0.88] md:text-[8vw]">
+        <h1 className="display-xl text-4xl sm:text-6xl md:text-[8vw] leading-[0.94] md:leading-[0.88]">
           {["We don't", "make websites."].map((line, index) => (
             <span key={line} className="block overflow-hidden">
               <motion.span
@@ -97,15 +97,15 @@ export function Hero() {
         </h1>
 
         <div className="mt-12 flex flex-col gap-6 border-t border-border pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex flex-wrap items-center gap-4">
-            <Magnetic>
-              <ProjectBriefButton className="label-mono h-auto rounded-none px-7 py-4">
+          <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+            <Magnetic className="w-full sm:w-auto">
+              <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5 sm:w-auto sm:px-7 sm:py-4">
                 Start a project <span aria-hidden>→</span>
               </ProjectBriefButton>
             </Magnetic>
             <a
               href="#work"
-              className="label-mono inline-flex items-center gap-3 border border-border px-7 py-4 text-foreground transition-colors hover:border-primary hover:text-primary"
+              className="label-mono inline-flex w-full items-center justify-center gap-3 border border-border px-6 py-3.5 text-foreground transition-colors hover:border-primary hover:text-primary sm:w-auto sm:px-7 sm:py-4"
             >
               Explore our work <span aria-hidden>↓</span>
             </a>

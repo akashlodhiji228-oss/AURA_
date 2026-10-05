@@ -89,8 +89,8 @@ export function ProjectBrief() {
           </div>
         </div>
 
-        <div className="px-6 py-10 md:px-9 md:py-12">
-          <DialogTitle className="display-xl text-4xl md:text-5xl">
+        <div className="px-5 py-8 sm:px-6 sm:py-10 md:px-9 md:py-12">
+          <DialogTitle className="display-xl text-2xl sm:text-4xl md:text-5xl">
             {step === 1 ? "Choose your package" : "When do we start?"}
           </DialogTitle>
           <DialogDescription className="mt-3 max-w-md font-editorial text-lg leading-snug">

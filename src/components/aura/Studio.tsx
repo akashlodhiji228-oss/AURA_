@@ -52,9 +52,9 @@ export function Aura() {
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20" />
       </div>
 
-      <div className="relative mx-auto max-w-[1600px] px-5 py-32 md:px-10 md:py-52">
-        <p className="label-mono mb-10 text-primary">The Aura</p>
-        <h2 className="display-xl max-w-4xl text-[8vw] leading-[0.9] md:text-[3.8vw]">
+      <div className="relative mx-auto max-w-[1600px] px-5 py-20 md:px-10 md:py-52">
+        <p className="label-mono mb-6 text-primary md:mb-10">The Aura</p>
+        <h2 className="display-xl max-w-4xl text-3xl sm:text-5xl md:text-[3.8vw] leading-[0.95] md:leading-[0.9]">
           <Reveal>Curious minds.</Reveal>
           <Reveal delay={0.06}>Obsessive builders.</Reveal>
           <Reveal delay={0.12}>
@@ -62,7 +62,7 @@ export function Aura() {
           </Reveal>
         </h2>
         <FadeIn delay={0.2}>
-          <p className="mt-12 max-w-lg font-editorial text-2xl leading-tight md:text-3xl">
+          <p className="mt-8 max-w-lg font-editorial text-xl leading-tight sm:text-2xl md:mt-12 md:text-3xl">
             We don't chase trends.
             <br />
             We weaponize them.
@@ -77,10 +77,10 @@ export function Capabilities() {
   const [open, setOpen] = useState<string | null>("Brand");
 
   return (
-    <section className="border-t border-border px-5 py-24 md:px-10 md:py-36">
+    <section className="border-t border-border px-5 py-16 md:px-10 md:py-36">
       <div className="mx-auto max-w-[1600px]">
-        <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
-          <h2 className="display-xl text-[9vw] md:text-[4.9vw]">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6 md:mb-14">
+          <h2 className="display-xl text-3xl sm:text-5xl md:text-[4.9vw]">
             <Reveal>Capability stack</Reveal>
           </h2>
           <p className="label-mono max-w-xs text-muted-foreground">
@@ -141,11 +141,11 @@ export function Capabilities() {
 
 export function Manifesto() {
   return (
-    <section className="border-t border-border px-5 py-24 md:px-10 md:py-36">
-      <div className="mx-auto grid max-w-[1600px] gap-12 lg:grid-cols-12">
+    <section className="border-t border-border px-5 py-16 md:px-10 md:py-36">
+      <div className="mx-auto grid max-w-[1600px] gap-8 lg:grid-cols-12 lg:gap-12">
         <p className="label-mono text-primary lg:col-span-3">Manifesto</p>
         <div className="lg:col-span-9">
-          <p className="font-editorial text-[5vw] leading-[1.08] md:text-[2.4vw]">
+          <p className="font-editorial text-xl sm:text-2xl md:text-[2.4vw] leading-snug">
             AURA_FORGE exists for founders, brands and ambitious teams who refuse to build
             ordinary things. We combine strategy, design, engineering, AI and growth under
             one roof — so nothing gets lost between the people who plan it and the people
@@ -173,7 +173,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden border-t border-border px-5 py-28 md:px-10 md:py-44"
+      className="relative overflow-hidden border-t border-border px-5 py-20 md:px-10 md:py-44"
     >
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 h-[60vw] w-[60vw] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-[130px]"
@@ -181,16 +181,16 @@ export function Contact() {
         aria-hidden
       />
       <div className="relative mx-auto max-w-[1600px]">
-        <h2 className="display-xl text-[10vw] leading-[0.9] md:text-[6.3vw]">
+        <h2 className="display-xl text-4xl sm:text-6xl md:text-[6.3vw] leading-[0.95] md:leading-[0.9]">
           <Reveal>Got something</Reveal>
           <Reveal delay={0.06}>
             <span className="text-primary">worth forging?</span>
           </Reveal>
         </h2>
 
-        <div className="mt-14 flex flex-col gap-10 border-t border-border pt-10 md:flex-row md:items-end md:justify-between">
-          <Magnetic strength={0.22}>
-            <ProjectBriefButton className="label-mono h-auto rounded-none px-9 py-5">
+        <div className="mt-10 flex flex-col gap-8 border-t border-border pt-10 md:flex-row md:items-end md:justify-between">
+          <Magnetic strength={0.22} className="w-full sm:w-auto">
+            <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-7 py-4 sm:w-auto sm:px-9 sm:py-5">
               Start a project <span aria-hidden>→</span>
             </ProjectBriefButton>
           </Magnetic>
@@ -211,7 +211,7 @@ export function Contact() {
               <p className="label-mono text-muted-foreground">Email</p>
               <a
                 href="mailto:officialauraforge@gmail.com"
-                className="font-display text-xl font-bold tracking-tight break-all transition-colors hover:text-primary md:text-2xl"
+                className="font-display text-lg font-bold tracking-tight break-all transition-colors hover:text-primary sm:text-xl md:text-2xl"
               >
                 officialauraforge@gmail.com
               </a>
@@ -225,10 +225,10 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border px-5 py-14 md:px-10">
-      <div className="mx-auto flex max-w-[1600px] flex-col gap-12 md:flex-row md:items-end md:justify-between">
+    <footer className="border-t border-border px-5 py-12 md:px-10 md:py-14">
+      <div className="mx-auto flex max-w-[1600px] flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
-          <p className="display-xl text-[9vw] leading-none md:text-[4.9vw]">
+          <p className="display-xl text-3xl sm:text-4xl md:text-[4.9vw] leading-none">
             Aura_Forge<sup className="text-primary">®</sup>
           </p>
           <p className="label-mono mt-6 text-muted-foreground">

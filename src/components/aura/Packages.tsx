@@ -106,11 +106,11 @@ function Card({ p }: { p: Pkg }) {
       >
         {open ? "Hide features −" : `View features (${p.features.length}) +`}
       </button>
-      <ul className={`mt-4 grid-cols-2 gap-x-3 gap-y-1.5 border-t border-border pt-4 ${open ? "grid" : "hidden"} sm:grid`}>
+      <ul className={`mt-4 grid-cols-1 gap-y-2 border-t border-border pt-4 ${open ? "grid" : "hidden"} sm:grid sm:grid-cols-2 sm:gap-x-3 sm:gap-y-1.5`}>
         {p.features.map((f) => (
-          <li key={f} className="flex min-w-0 gap-1.5 text-[13px] leading-snug">
+          <li key={f} className="flex min-w-0 gap-2 text-[13px] leading-snug">
             <Check aria-hidden className="mt-0.5 h-3.5 w-3.5 shrink-0 text-aura" />
-            <span>{f}</span>
+            <span className="break-words">{f}</span>
           </li>
         ))}
       </ul>
@@ -137,7 +137,7 @@ export function Packages() {
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
           <div className="min-w-0">
             <p className="label-mono text-aura">AuraForge Solutions</p>
-            <h2 id="packages-title" className="mt-3 font-display text-3xl font-bold tracking-tight md:text-5xl">
+            <h2 id="packages-title" className="mt-3 font-display text-2xl font-bold tracking-tight sm:text-3xl md:text-5xl">
               Packages built for every stage of your business
             </h2>
             <p className="mt-3 max-w-2xl text-sm text-muted-foreground md:text-base">
@@ -147,7 +147,7 @@ export function Packages() {
           <div
             role="tablist"
             aria-label="Package categories"
-            className="sticky top-16 z-10 inline-flex self-start rounded-md border border-border bg-background/90 p-1 backdrop-blur md:static md:self-end"
+            className="flex max-w-full overflow-x-auto self-start rounded-md border border-border bg-background/90 p-1 backdrop-blur md:self-end"
           >
             {tabs.map((t) => (
               <button
@@ -157,7 +157,7 @@ export function Packages() {
                 aria-selected={tab === t.id}
                 aria-controls="packages-panel"
                 onClick={() => setTab(t.id)}
-                className={`rounded-sm px-3 py-2 font-mono text-[11px] font-bold tracking-[0.15em] uppercase transition-colors md:px-4 ${
+                className={`whitespace-nowrap rounded-sm px-3 py-2 font-mono text-[10px] sm:text-[11px] font-bold tracking-[0.12em] sm:tracking-[0.15em] uppercase transition-colors md:px-4 ${
                   tab === t.id ? "bg-aura text-ink" : "text-muted-foreground hover:text-foreground"
                 }`}
               >

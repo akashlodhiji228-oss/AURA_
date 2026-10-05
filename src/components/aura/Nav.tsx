@@ -65,18 +65,23 @@ export function Nav() {
       </div>
 
       {open ? (
-        <div className="hairline bg-background px-5 pb-8 pt-6 md:hidden">
+        <div className="hairline max-h-[calc(100svh-4.5rem)] overflow-y-auto bg-background/95 px-5 pb-8 pt-6 backdrop-blur-2xl md:hidden">
           <nav className="flex flex-col gap-5">
             {[...links, { label: "Contact", href: "#contact" }].map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="display-xl text-3xl text-foreground"
+                className="display-xl text-3xl text-foreground transition-colors hover:text-primary"
               >
                 {link.label}
               </a>
             ))}
+            <div className="border-t border-border pt-4">
+              <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5">
+                Start a project <span aria-hidden>→</span>
+              </ProjectBriefButton>
+            </div>
           </nav>
         </div>
       ) : null}

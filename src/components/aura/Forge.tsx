@@ -43,10 +43,10 @@ const categories = [
 
 export function Philosophy() {
   return (
-    <section className="relative border-t border-border px-5 py-28 md:px-10 md:py-44">
-      <div className="mx-auto grid max-w-[1600px] gap-12 lg:grid-cols-12">
+    <section className="relative border-t border-border px-5 py-16 md:px-10 md:py-44">
+      <div className="mx-auto grid max-w-[1600px] gap-8 lg:grid-cols-12 lg:gap-12">
         <div className="lg:col-span-8">
-          <h2 className="display-xl text-[8vw] leading-[0.9] md:text-[4.6vw]">
+          <h2 className="display-xl text-3xl sm:text-5xl md:text-[4.6vw] leading-[0.95] md:leading-[0.9]">
             <Reveal>
               <span className="text-muted-foreground">Most agencies</span>
             </Reveal>
@@ -62,12 +62,12 @@ export function Philosophy() {
           </h2>
         </div>
         <FadeIn delay={0.1} className="lg:col-span-4 lg:pt-6">
-          <p className="font-editorial text-2xl leading-tight md:text-3xl">
+          <p className="font-editorial text-xl leading-tight sm:text-2xl md:text-3xl">
             Strategy without execution is chaos.
             <br />
             Execution without strategy is noise.
           </p>
-          <p className="label-mono mt-8 text-primary">We do both.</p>
+          <p className="label-mono mt-6 text-primary md:mt-8">We do both.</p>
         </FadeIn>
       </div>
     </section>
@@ -81,7 +81,7 @@ export function Forge() {
   return (
     <section
       id="forge"
-      className="relative overflow-hidden border-t border-border bg-card/40 px-5 py-24 md:px-10 md:py-36"
+      className="relative overflow-hidden border-t border-border bg-card/40 px-5 py-16 md:px-10 md:py-36"
     >
       <AnimatePresence>
         {current ? (
@@ -109,8 +109,8 @@ export function Forge() {
       </AnimatePresence>
 
       <div className="relative mx-auto max-w-[1600px]">
-        <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
-          <h2 className="display-xl text-[9vw] md:text-[4.9vw]">
+        <div className="mb-10 flex flex-wrap items-end justify-between gap-6 md:mb-14">
+          <h2 className="display-xl text-3xl sm:text-5xl md:text-[4.9vw]">
             <Reveal>What we forge</Reveal>
           </h2>
           <p className="label-mono max-w-xs text-muted-foreground">
@@ -126,20 +126,20 @@ export function Forge() {
                   onMouseEnter={() => setActive(category.title)}
                   onMouseLeave={() => setActive(null)}
                   data-cursor="FORGE"
-                  className="group grid grid-cols-1 items-baseline gap-2 border-b border-border py-7 transition-colors md:grid-cols-12 md:gap-6 md:py-9"
+                  className="group flex flex-col gap-2 border-b border-border py-6 transition-colors md:grid md:grid-cols-12 md:items-baseline md:gap-6 md:py-9"
                 >
                   <span className="label-mono text-primary md:col-span-1">
                     {category.number}
                   </span>
-                  <h3 className="display-xl text-4xl transition-transform duration-500 group-hover:translate-x-2 md:col-span-4 md:text-[3vw]">
+                  <h3 className="display-xl text-2xl transition-transform duration-500 group-hover:translate-x-2 sm:text-3xl md:col-span-4 md:text-[3vw]">
                     <span className="transition-colors duration-300 group-hover:text-primary">
                       {category.title}
                     </span>
                   </h3>
-                  <p className="text-sm leading-relaxed text-muted-foreground md:col-span-4">
+                  <p className="text-xs leading-relaxed text-muted-foreground sm:text-sm md:col-span-4">
                     {category.items.join(" · ")}
                   </p>
-                  <p className="font-editorial text-lg text-foreground/70 md:col-span-3 md:text-right">
+                  <p className="font-editorial text-base text-foreground/70 sm:text-lg md:col-span-3 md:text-right">
                     {category.note}
                   </p>
                 </div>
