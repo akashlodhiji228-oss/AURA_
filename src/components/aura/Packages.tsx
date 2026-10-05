@@ -79,12 +79,12 @@ function Card({ p }: { p: Pkg }) {
   const [open, setOpen] = useState(false);
   return (
     <article
-      className={`relative flex flex-col rounded-md border p-5 transition-all duration-300 hover:-translate-y-0.5 md:p-6 ${
-        p.popular ? "border-aura bg-aura/[0.05]" : "border-border bg-card hover:border-foreground/30"
+      className={`relative flex flex-col rounded-md border p-5 card-hover md:p-6 ${
+        p.popular ? "border-aura bg-aura/[0.05] shadow-[0_0_24px_-8px_oklch(0.905_0.219_129/0.25)]" : "border-border bg-card hover:border-foreground/30"
       }`}
     >
       {p.popular && (
-        <span className="absolute -top-2.5 right-4 rounded-sm bg-aura px-2 py-0.5 font-mono text-[10px] font-bold tracking-[0.18em] text-ink">
+        <span className="absolute -top-2.5 right-4 rounded-sm bg-aura px-2.5 py-0.5 font-mono text-[10px] font-bold tracking-[0.18em] text-ink pulse-aura">
           POPULAR
         </span>
       )}

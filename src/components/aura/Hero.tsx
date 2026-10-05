@@ -99,7 +99,7 @@ export function Hero() {
         <div className="mt-6 flex flex-col gap-4 border-t border-border pt-5 sm:mt-12 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:pt-8">
           <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
             <Magnetic className="w-full sm:w-auto">
-              <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5 sm:w-auto sm:px-7 sm:py-4">
+              <ProjectBriefButton className="label-mono h-auto w-full justify-center rounded-none px-6 py-3.5 sm:w-auto sm:px-7 sm:py-4 shine-sweep">
                 Start a project <span aria-hidden>→</span>
               </ProjectBriefButton>
             </Magnetic>
