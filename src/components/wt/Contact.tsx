@@ -19,8 +19,8 @@ export function Contact() {
             </ProjectBriefButton>
           </div>
           <div className="grid gap-3">
-            <a href="https://wa.me/917869461895" target="_blank" rel="noreferrer" className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10">
-              <span><span className="block text-xs text-background/60">WhatsApp</span><span className="font-display text-xl font-semibold">+91 78694 61895</span></span>
+            <a href="https://wa.me/917067558299" target="_blank" rel="noreferrer" className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10">
+              <span><span className="block text-xs text-background/60">WhatsApp</span><span className="font-display text-xl font-semibold">+91 70675 58299</span></span>
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
             </a>
             <a href="mailto:whathestudio2026@gmail.com" className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10">

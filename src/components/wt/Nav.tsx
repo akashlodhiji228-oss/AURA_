@@ -99,7 +99,7 @@ export function Nav() {
             <ProjectBriefButton className="h-auto rounded-2xl bg-primary py-4 text-sm font-semibold text-primary-foreground">
               Start a project
             </ProjectBriefButton>
-            <a href="https://wa.me/917869461895" target="_blank" rel="noreferrer" className="rounded-2xl border border-border bg-background py-4 text-center text-sm font-semibold">
+            <a href="https://wa.me/917067558299" target="_blank" rel="noreferrer" className="rounded-2xl border border-border bg-background py-4 text-center text-sm font-semibold">
               WhatsApp
             </a>
           </div>

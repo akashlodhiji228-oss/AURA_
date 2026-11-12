@@ -29,7 +29,7 @@ const sections: { title: string; body: string[] }[] = [
     title: "1. Who we are",
     body: [
       "WT&tudio (\"we\", \"us\", \"our\") is a full-service digital execution studio based in India. For the purposes of the Digital Personal Data Protection Act, 2023 (\"DPDP Act\"), WT&tudio is the Data Fiduciary — the entity that determines why and how your personal data is processed.",
-      "You can reach us at whathestudio2026@gmail.com or on WhatsApp at +91 78694 61895.",
+      "You can reach us at whathestudio2026@gmail.com or on WhatsApp at +91 70675 58299.",
     ],
   },
   {
@@ -71,7 +71,7 @@ const sections: { title: string; body: string[] }[] = [
   {
     title: "7. Grievance redressal",
     body: [
-      "If you have any question, concern or complaint about how your personal data is handled, contact our Grievance Officer at whathestudio2026@gmail.com or on WhatsApp at +91 78694 61895. We will acknowledge and work to resolve your grievance promptly.",
+      "If you have any question, concern or complaint about how your personal data is handled, contact our Grievance Officer at whathestudio2026@gmail.com or on WhatsApp at +91 70675 58299. We will acknowledge and work to resolve your grievance promptly.",
       "If you are not satisfied with our response, you may approach the Data Protection Board of India as provided under the DPDP Act.",
     ],
   },

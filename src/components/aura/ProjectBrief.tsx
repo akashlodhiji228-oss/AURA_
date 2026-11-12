@@ -180,7 +180,7 @@ export function ProjectBrief() {
                   </a>
                 </Button>
                 <Button asChild disabled={!timeline} className="h-11 rounded-none font-mono text-xs uppercase">
-                  <a href={`https://wa.me/917869461895?text=${encodeURIComponent(message)}`} target="_blank" rel="noreferrer">
+                  <a href={`https://wa.me/917067558299?text=${encodeURIComponent(message)}`} target="_blank" rel="noreferrer">
                     <MessageCircle aria-hidden /> WhatsApp
                   </a>
                 </Button>
