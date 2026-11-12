@@ -24,7 +24,7 @@ const tabs: { id: string; label: string; items: Pkg[] }[] = [
         name: "Starter",
         price: "₹7,999",
         label: "Essential Website Package",
-        features: ["Up to 5 pages", "Responsive design", "Contact / enquiry form", "Google Maps", "WhatsApp integration", "Social media integration", "Basic SEO", "1 month support"],
+        features: ["Up to 5 pages", "Responsive design", "Contact / enquiry form", "WhatsApp integration", "Social media integration", "Basic SEO", "1 month support"],
         cta: "Get Started",
       },
       {
