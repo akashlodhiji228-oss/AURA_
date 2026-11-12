@@ -29,7 +29,7 @@ const sections: { title: string; body: string[] }[] = [
     title: "1. Who we are",
     body: [
       "WT&tudio (\"we\", \"us\", \"our\") is a full-service digital execution studio based in India. For the purposes of the Digital Personal Data Protection Act, 2023 (\"DPDP Act\"), WT&tudio is the Data Fiduciary — the entity that determines why and how your personal data is processed.",
-      "You can reach us at officialauraforge@gmail.com or on WhatsApp at +91 78694 61895.",
+      "You can reach us at whathestudio2026@gmail.com or on WhatsApp at +91 78694 61895.",
     ],
   },
   {
@@ -65,13 +65,13 @@ const sections: { title: string; body: string[] }[] = [
     title: "6. Your rights as a Data Principal",
     body: [
       "Under the DPDP Act, you have the right to: (a) access information about your personal data we hold and how it is processed; (b) request correction, completion, updating or erasure of your personal data; (c) withdraw your consent at any time, with effect from the date of withdrawal; (d) nominate a person to exercise these rights in the event of your death or incapacity; and (e) raise a grievance about how we handle your data.",
-      "To exercise any of these rights, email us at officialauraforge@gmail.com with the subject \"Data Request\". We will respond within a reasonable time as required by law.",
+      "To exercise any of these rights, email us at whathestudio2026@gmail.com with the subject \"Data Request\". We will respond within a reasonable time as required by law.",
     ],
   },
   {
     title: "7. Grievance redressal",
     body: [
-      "If you have any question, concern or complaint about how your personal data is handled, contact our Grievance Officer at officialauraforge@gmail.com or on WhatsApp at +91 78694 61895. We will acknowledge and work to resolve your grievance promptly.",
+      "If you have any question, concern or complaint about how your personal data is handled, contact our Grievance Officer at whathestudio2026@gmail.com or on WhatsApp at +91 78694 61895. We will acknowledge and work to resolve your grievance promptly.",
       "If you are not satisfied with our response, you may approach the Data Protection Board of India as provided under the DPDP Act.",
     ],
   },

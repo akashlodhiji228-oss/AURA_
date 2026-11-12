@@ -175,7 +175,7 @@ export function ProjectBrief() {
             ) : (
               <div className="flex flex-wrap justify-end gap-2">
                 <Button asChild variant="outline" className="h-11 rounded-none font-mono text-xs uppercase">
-                  <a href={`mailto:officialauraforge@gmail.com?subject=${encodeURIComponent("New WT&tudio project brief")}&body=${encodeURIComponent(message)}`}>
+                  <a href={`mailto:whathestudio2026@gmail.com?subject=${encodeURIComponent("New WT&tudio project brief")}&body=${encodeURIComponent(message)}`}>
                     <Mail aria-hidden /> Email
                   </a>
                 </Button>
