@@ -4,6 +4,7 @@ const socials = [
   ["Instagram", "https://www.instagram.com/_whathestudio/"],
   ["LinkedIn", "https://www.linkedin.com/company/auraforge"],
   ["X", "https://x.com/auraforge"],
+  ["Google", "https://share.google/91VjYk5vwsQwAPWmr"],
 ];
 
 export function Footer() {
