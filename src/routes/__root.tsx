@@ -79,16 +79,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "WT&tudio — What The Studio" },
-      { name: "description", content: "WT&tudio is an independent studio for brand, product, AI and growth." },
+      { title: "WT&tudio — Digital Growth Studio" },
+      {
+        name: "description",
+        content:
+          "Where ideas become leverage. Where brands become inevitable. We design websites, build apps, create brands and bring smart AI solutions to life.",
+      },
       { name: "author", content: "WT&tudio" },
-      { property: "og:title", content: "WT&tudio — What The Studio" },
-      { property: "og:description", content: "Brand, product, AI and growth — built by one studio." },
+      { property: "og:site_name", content: "WT&tudio" },
+      { property: "og:title", content: "WT&tudio — Digital Growth Studio" },
+      {
+        property: "og:description",
+        content: "Where ideas become leverage. Where brands become inevitable.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://auraforge.site/" },
+      { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "WT&tudio — Digital Growth Studio" },
+      {
+        name: "twitter:description",
+        content: "Where ideas become leverage. Where brands become inevitable.",
+      },
+      { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
       { name: "theme-color", content: "#FFFFFF" },
     ],
     links: [
+      { rel: "canonical", href: "https://auraforge.site/" },
       {
         rel: "stylesheet",
         href: appCss,

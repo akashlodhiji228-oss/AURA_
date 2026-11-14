@@ -11,6 +11,7 @@ export const Route = createFileRoute("/privacy-policy")({
         content:
           "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
       },
+      { property: "og:site_name", content: "WT&tudio" },
       { property: "og:title", content: "Privacy Policy — WT&tudio" },
       {
         property: "og:description",
@@ -18,7 +19,19 @@ export const Route = createFileRoute("/privacy-policy")({
           "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:url", content: "https://auraforge.site/privacy-policy" },
+      { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Privacy Policy — WT&tudio" },
+      {
+        name: "twitter:description",
+        content:
+          "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
+      },
+      { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://auraforge.site/privacy-policy" },
     ],
   }),
   component: PrivacyPolicy,

@@ -12,19 +12,31 @@ import { ProjectBrief } from "@/components/aura/ProjectBrief";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "WT&tudio — What The Studio | Brand, Web, AI & Growth" },
+      { title: "WT&tudio — Digital Growth Studio" },
       {
         name: "description",
         content:
-          "WT&tudio designs, builds and markets digital things people stop for — branding, websites, apps, AI automation, content and ads. Websites from ₹7,999.",
+          "Where ideas become leverage. Where brands become inevitable. We design websites, build apps, create brands and bring smart AI solutions to life.",
       },
-      { property: "og:title", content: "WT&tudio — Ideas worth a second look" },
+      { property: "og:site_name", content: "WT&tudio" },
+      { property: "og:title", content: "WT&tudio — Digital Growth Studio" },
       {
         property: "og:description",
-        content: "A small, sharp studio for brand, websites, apps, AI and growth. Start a project on WhatsApp.",
+        content: "Where ideas become leverage. Where brands become inevitable.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://auraforge.site/" },
+      { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "WT&tudio — Digital Growth Studio" },
+      {
+        name: "twitter:description",
+        content: "Where ideas become leverage. Where brands become inevitable.",
+      },
+      { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://auraforge.site/" },
     ],
   }),
   component: Index,
