@@ -12,7 +12,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative px-5 py-24 md:px-6 lg:px-10 md:py-32">
+    <section id="services" className="relative px-5 py-24 md:px-6 lg:px-10 md:py-32 scroll-mt-20">
       <div className="mx-auto max-w-[1440px]">
         <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
           <div>

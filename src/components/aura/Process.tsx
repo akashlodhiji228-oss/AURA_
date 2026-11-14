@@ -12,7 +12,7 @@ const stages = [
 
 export function Process() {
   return (
-    <section id="process" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32">
+    <section id="process" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32 scroll-mt-20">
       <div aria-hidden className="dot-grid absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
       <div className="mx-auto max-w-[1440px]">
         <div className="mx-auto max-w-2xl text-center">

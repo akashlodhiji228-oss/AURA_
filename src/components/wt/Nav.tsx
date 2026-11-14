@@ -37,6 +37,18 @@ export function Nav() {
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (window.location.pathname === "/" || window.location.pathname === "") {
+      e.preventDefault();
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        history.pushState(null, "", `/#${id}`);
+        setActive(id);
+      }
+    }
+  };
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-6 lg:px-10 md:pt-5">
       <div
@@ -44,7 +56,7 @@ export function Nav() {
           scrolled || open ? "glass-strong" : "border border-transparent"
         }`}
       >
-        <a href="/#top" aria-label="WT&tudio home">
+        <a href="/#top" aria-label="WT&tudio home" onClick={(e) => handleNavClick(e, "top")}>
           <Logo />
         </a>
 
@@ -53,6 +65,7 @@ export function Nav() {
             <a
               key={l.id}
               href={`/#${l.id}`}
+              onClick={(e) => handleNavClick(e, l.id)}
               aria-current={active === l.id ? "true" : undefined}
               className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
                 active === l.id ? "bg-foreground text-background" : "text-muted-foreground hover:bg-foreground/5 hover:text-foreground"
@@ -87,7 +100,10 @@ export function Nav() {
               <a
                 key={l.id}
                 href={`/#${l.id}`}
-                onClick={() => setOpen(false)}
+                onClick={(e) => {
+                  setOpen(false);
+                  handleNavClick(e, l.id);
+                }}
                 className="flex items-center justify-between rounded-2xl px-4 py-4 text-2xl font-semibold tracking-tight hover:bg-foreground/5"
               >
                 {l.label}

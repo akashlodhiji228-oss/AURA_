@@ -9,7 +9,7 @@ const points = [
 
 export function Why() {
   return (
-    <section id="studio" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32">
+    <section id="studio" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32 scroll-mt-20">
       <div aria-hidden className="animate-blob absolute left-1/2 top-1/2 -z-10 h-[50vw] w-[50vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-[120px]" />
       <div className="mx-auto max-w-[1440px]">
         <div className="glass-strong grid gap-10 rounded-[2rem] p-7 md:p-14 lg:grid-cols-[1fr_1.2fr]">

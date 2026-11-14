@@ -2,7 +2,7 @@ import { ProjectBriefButton } from "@/components/aura/ProjectBrief";
 
 export function Contact() {
   return (
-    <section id="contact" className="px-3 pb-6 md:px-6 lg:px-10">
+    <section id="contact" className="px-3 pb-6 md:px-6 lg:px-10 scroll-mt-20">
       <div className="relative mx-auto max-w-[1440px] overflow-hidden rounded-[2rem] bg-foreground px-6 py-20 text-background md:px-14 md:py-28">
         <div aria-hidden className="animate-blob absolute -right-20 -top-20 h-96 w-96 rounded-full bg-primary/50 blur-[100px]" />
         <div aria-hidden className="dot-grid absolute inset-0 opacity-20" />

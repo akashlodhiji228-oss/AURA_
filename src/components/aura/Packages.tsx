@@ -132,7 +132,7 @@ export function Packages() {
   const [tab, setTab] = useState("web");
   const active = tabs.find((t) => t.id === tab)!;
   return (
-    <section id="packages" aria-labelledby="packages-title" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32">
+    <section id="packages" aria-labelledby="packages-title" className="relative overflow-hidden px-5 py-24 md:px-6 lg:px-10 md:py-32 scroll-mt-20">
       <div className="mx-auto max-w-[1440px]">
         <div className="flex flex-col items-center text-center">
           <div className="min-w-0 max-w-2xl">
