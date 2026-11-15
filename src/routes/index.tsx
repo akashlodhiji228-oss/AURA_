@@ -34,6 +34,7 @@ export const Route = createFileRoute("/")({
         content: "Where ideas become leverage. Where brands become inevitable.",
       },
       { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+      { name: "google-site-verification", content: "google7c925bf777e43a2d" },
     ],
     links: [
       { rel: "canonical", href: "https://auraforge.site/" },
