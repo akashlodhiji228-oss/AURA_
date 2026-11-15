@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ProjectBriefButton } from "@/components/aura/ProjectBrief";
+import { trackWhatsAppClick } from "@/lib/analytics";
 import { Logo } from "./Logo";
 
 const links = [
@@ -115,7 +116,13 @@ export function Nav() {
             <ProjectBriefButton className="h-auto rounded-2xl bg-primary py-4 text-sm font-semibold text-primary-foreground">
               Start a project
             </ProjectBriefButton>
-            <a href="https://wa.me/917067558299" target="_blank" rel="noreferrer" className="rounded-2xl border border-border bg-background py-4 text-center text-sm font-semibold">
+            <a
+              href="https://wa.me/917067558299"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => trackWhatsAppClick("Mobile Nav Drawer")}
+              className="rounded-2xl border border-border bg-background py-4 text-center text-sm font-semibold"
+            >
               WhatsApp
             </a>
           </div>

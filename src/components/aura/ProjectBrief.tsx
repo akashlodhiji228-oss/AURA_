@@ -8,6 +8,12 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  trackEvent,
+  trackGenerateLead,
+  trackSelectPackage,
+  trackWhatsAppClick,
+} from "@/lib/analytics";
 
 export const OPEN_PROJECT_BRIEF = "aura:open-project-brief";
 
@@ -123,6 +129,7 @@ export function ProjectBrief() {
                       setPackageSelection(item);
                       setService(item.name);
                       setBudget(item.price);
+                      trackSelectPackage(item.name, item.price);
                     }}
                     className={cn(
                       "h-16 justify-between rounded-none border-border bg-transparent px-5 font-mono text-xs uppercase hover:border-primary hover:bg-transparent hover:text-primary",
@@ -166,7 +173,13 @@ export function ProjectBrief() {
             {step === 1 ? (
               <Button
                 type="button"
-                onClick={() => setStep(2)}
+                onClick={() => {
+                  trackEvent("brief_continue_step_2", {
+                    package_name: service,
+                    price: budget,
+                  });
+                  setStep(2);
+                }}
                 disabled={!packageSelection}
                 className="h-11 rounded-none px-6 font-mono text-xs uppercase"
               >
@@ -175,12 +188,35 @@ export function ProjectBrief() {
             ) : (
               <div className="flex flex-wrap justify-end gap-2">
                 <Button asChild variant="outline" className="h-11 rounded-none font-mono text-xs uppercase">
-                  <a href={`mailto:whathestudio2026@gmail.com?subject=${encodeURIComponent("New WT&tudio project brief")}&body=${encodeURIComponent(message)}`}>
+                  <a
+                    href={`mailto:whathestudio2026@gmail.com?subject=${encodeURIComponent("New WT&tudio project brief")}&body=${encodeURIComponent(message)}`}
+                    onClick={() => {
+                      trackGenerateLead({
+                        method: "email",
+                        package_name: service,
+                        price: budget,
+                        timeline,
+                      });
+                    }}
+                  >
                     <Mail aria-hidden /> Email
                   </a>
                 </Button>
                 <Button asChild disabled={!timeline} className="h-11 rounded-none font-mono text-xs uppercase">
-                  <a href={`https://wa.me/917067558299?text=${encodeURIComponent(message)}`} target="_blank" rel="noreferrer">
+                  <a
+                    href={`https://wa.me/917067558299?text=${encodeURIComponent(message)}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => {
+                      trackGenerateLead({
+                        method: "whatsapp",
+                        package_name: service,
+                        price: budget,
+                        timeline,
+                      });
+                      trackWhatsAppClick("Project Brief Submission");
+                    }}
+                  >
                     <MessageCircle aria-hidden /> WhatsApp
                   </a>
                 </Button>
@@ -195,7 +231,15 @@ export function ProjectBrief() {
 
 export function ProjectBriefButton({ className, children }: { className?: string; children: ReactNode }) {
   return (
-    <Button type="button" onClick={() => openProjectBrief()} className={className} data-cursor="FORGE">
+    <Button
+      type="button"
+      onClick={() => {
+        trackEvent("project_brief_open");
+        openProjectBrief();
+      }}
+      className={className}
+      data-cursor="FORGE"
+    >
       {children}
     </Button>
   );

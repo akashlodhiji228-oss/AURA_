@@ -4,11 +4,13 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
+  useLocation,
   HeadContent,
   Scripts,
   type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { trackPageView, initAnalyticsAutoTracking } from "@/lib/analytics";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -181,12 +183,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     scripts: [
       {
         async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-XGKSD9FX4F",
+      },
+      {
+        async: true,
         src: "https://www.googletagmanager.com/gtm.js?id=GTM-MWJXNTZD",
       },
       {
         children: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());`,
+gtag('js', new Date());
+gtag('config', 'G-XGKSD9FX4F', { send_page_view: false });`,
       },
     ],
   }),
@@ -227,6 +234,16 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const location = useLocation();
+
+  useEffect(() => {
+    trackPageView(location.pathname, document.title);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    const cleanup = initAnalyticsAutoTracking();
+    return cleanup;
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>

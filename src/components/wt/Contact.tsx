@@ -1,4 +1,5 @@
 import { ProjectBriefButton } from "@/components/aura/ProjectBrief";
+import { trackContactClick, trackWhatsAppClick } from "@/lib/analytics";
 
 export function Contact() {
   return (
@@ -19,11 +20,24 @@ export function Contact() {
             </ProjectBriefButton>
           </div>
           <div className="grid gap-3">
-            <a href="https://wa.me/917067558299" target="_blank" rel="noreferrer" className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10">
+            <a
+              href="https://wa.me/917067558299"
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => {
+                trackContactClick("whatsapp", "Contact Section");
+                trackWhatsAppClick("Contact Section");
+              }}
+              className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10"
+            >
               <span><span className="block text-xs text-background/60">WhatsApp</span><span className="font-display text-xl font-semibold">+91 70675 58299</span></span>
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-            <a href="mailto:whathestudio2026@gmail.com" className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10">
+            <a
+              href="mailto:whathestudio2026@gmail.com"
+              onClick={() => trackContactClick("email", "Contact Section")}
+              className="group flex items-center justify-between rounded-2xl border border-background/15 bg-background/5 p-5 backdrop-blur-xl transition-colors hover:bg-background/10"
+            >
               <span className="min-w-0"><span className="block text-xs text-background/60">Email</span><span className="block truncate font-display text-lg font-semibold">whathestudio2026@gmail.com</span></span>
               <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
             </a>

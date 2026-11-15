@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { openProjectBrief } from "./ProjectBrief";
+import { trackSelectPackage } from "@/lib/analytics";
 
 type Pkg = {
   number: string;
@@ -99,7 +100,10 @@ function Card({ p }: { p: Pkg }) {
       </p>
       <Button
         type="button"
-        onClick={() => openProjectBrief({ name: p.name, price: p.price })}
+        onClick={() => {
+          trackSelectPackage(p.name, p.price);
+          openProjectBrief({ name: p.name, price: p.price });
+        }}
         className={`relative mt-6 h-auto rounded-full px-5 py-3.5 text-sm font-semibold transition-colors ${
           dark ? "bg-primary text-primary-foreground hover:bg-background hover:text-foreground" : "bg-foreground text-background hover:bg-primary hover:text-primary-foreground"
         }`}
@@ -193,7 +197,10 @@ export function Packages() {
                     key={a.name}
                     type="button"
                     variant="ghost"
-                    onClick={() => openProjectBrief({ name: a.name, price: a.price })}
+                    onClick={() => {
+                      trackSelectPackage(a.name, a.price);
+                      openProjectBrief({ name: a.name, price: a.price });
+                    }}
                     className="h-auto min-w-0 justify-start gap-3 whitespace-normal rounded-2xl border border-border bg-background px-4 py-3 text-left transition-colors hover:border-aura/60"
                   >
                     <span aria-hidden className="shrink-0 text-lg">{a.icon}</span>
