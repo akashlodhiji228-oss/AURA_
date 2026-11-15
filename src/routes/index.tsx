@@ -15,8 +15,8 @@ const homeSchema = {
     {
       "@type": "ProfessionalService",
       "@id": "https://auraforge.site/#service",
-      "name": "AuraForge — Digital Growth Studio",
-      "alternateName": "WT&tudio",
+      "name": "WT&tudio — Digital Growth Studio",
+      "alternateName": "What The Studio",
       "url": "https://auraforge.site/",
       "image": "https://auraforge.site/og/wtstudio-preview.png",
       "telephone": "+91-7067558299",
@@ -26,12 +26,11 @@ const homeSchema = {
       "paymentAccepted": "UPI, Bank Transfer, Card",
       "sameAs": [
         "https://www.instagram.com/_whathestudio/",
-        "https://www.linkedin.com/company/auraforge",
-        "https://x.com/auraforge"
+        "https://www.facebook.com/profile.php?id=61596296380946&ref=1"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "AuraForge Digital Growth Services",
+        "name": "WT&tudio Digital Growth Services",
         "itemListElement": [
           {
             "@type": "Offer",
@@ -110,37 +109,37 @@ const homeSchema = {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AuraForge | Website Development, AI Solutions & Digital Growth Studio" },
+      { title: "WT&tudio | Website Development, AI Solutions & Digital Growth Studio" },
       {
         name: "description",
         content:
-          "AuraForge helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
+          "WT&tudio helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
       },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "googlebot", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
-      { property: "og:site_name", content: "AuraForge" },
-      { property: "og:title", content: "AuraForge | Website Development, AI Solutions & Digital Growth Studio" },
+      { property: "og:site_name", content: "WT&tudio" },
+      { property: "og:title", content: "WT&tudio | Website Development, AI Solutions & Digital Growth Studio" },
       {
         property: "og:description",
         content:
-          "AuraForge helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
+          "WT&tudio helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://auraforge.site/" },
       { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
-      { property: "og:image:alt", content: "AuraForge — Digital Growth Studio Preview" },
+      { property: "og:image:alt", content: "WT&tudio — Digital Growth Studio Preview" },
       { property: "og:image:width", content: "1024" },
       { property: "og:image:height", content: "682" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "AuraForge | Website Development, AI Solutions & Digital Growth Studio" },
+      { name: "twitter:title", content: "WT&tudio | Website Development, AI Solutions & Digital Growth Studio" },
       {
         name: "twitter:description",
         content:
-          "AuraForge helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
+          "WT&tudio helps businesses grow with professional website development, mobile applications, AI automation, branding, creative design and digital growth solutions.",
       },
       { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
-      { name: "twitter:image:alt", content: "AuraForge — Digital Growth Studio Preview" },
+      { name: "twitter:image:alt", content: "WT&tudio — Digital Growth Studio Preview" },
       { name: "google-site-verification", content: "google7c925bf777e43a2d" },
     ],
     links: [

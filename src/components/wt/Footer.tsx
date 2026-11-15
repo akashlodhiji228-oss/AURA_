@@ -2,8 +2,7 @@ import { Logo } from "./Logo";
 
 const socials = [
   ["Instagram", "https://www.instagram.com/_whathestudio/"],
-  ["LinkedIn", "https://www.linkedin.com/company/auraforge"],
-  ["X", "https://x.com/auraforge"],
+  ["Facebook", "https://www.facebook.com/profile.php?id=61596296380946&ref=1"],
 ];
 
 export function Footer() {

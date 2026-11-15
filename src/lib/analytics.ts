@@ -1,5 +1,5 @@
 /**
- * Google Analytics 4 (GA4) Integration for AuraForge
+ * Google Analytics 4 (GA4) Integration for WT&tudio
  * Measurement ID: G-XGKSD9FX4F
  */
 

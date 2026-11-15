@@ -24,37 +24,37 @@ const privacyBreadcrumbSchema = {
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | AuraForge — Digital Growth Studio" },
+      { title: "Privacy Policy | WT&tudio — Digital Growth Studio" },
       {
         name: "description",
         content:
-          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of WT&tudio explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "googlebot", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
-      { property: "og:site_name", content: "AuraForge" },
-      { property: "og:title", content: "Privacy Policy | AuraForge — Digital Growth Studio" },
+      { property: "og:site_name", content: "WT&tudio" },
+      { property: "og:title", content: "Privacy Policy | WT&tudio — Digital Growth Studio" },
       {
         property: "og:description",
         content:
-          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of WT&tudio explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://auraforge.site/privacy-policy" },
       { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
-      { property: "og:image:alt", content: "AuraForge — Privacy Policy" },
+      { property: "og:image:alt", content: "WT&tudio — Privacy Policy" },
       { property: "og:image:width", content: "1024" },
       { property: "og:image:height", content: "682" },
       { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Privacy Policy | AuraForge — Digital Growth Studio" },
+      { name: "twitter:title", content: "Privacy Policy | WT&tudio — Digital Growth Studio" },
       {
         name: "twitter:description",
         content:
-          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of WT&tudio explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
       { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
-      { name: "twitter:image:alt", content: "AuraForge — Privacy Policy" },
+      { name: "twitter:image:alt", content: "WT&tudio — Privacy Policy" },
     ],
     links: [
       { rel: "canonical", href: "https://auraforge.site/privacy-policy" },
