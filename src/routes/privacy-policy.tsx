@@ -2,33 +2,59 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/wt/Nav";
 import { Footer } from "@/components/wt/Footer";
 
+const privacyBreadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://auraforge.site/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Privacy Policy",
+      "item": "https://auraforge.site/privacy-policy"
+    }
+  ]
+};
+
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — WT&tudio" },
+      { title: "Privacy Policy | AuraForge — Digital Growth Studio" },
       {
         name: "description",
         content:
-          "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
-      { property: "og:site_name", content: "WT&tudio" },
-      { property: "og:title", content: "Privacy Policy — WT&tudio" },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { name: "googlebot", content: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" },
+      { property: "og:site_name", content: "AuraForge" },
+      { property: "og:title", content: "Privacy Policy | AuraForge — Digital Growth Studio" },
       {
         property: "og:description",
         content:
-          "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://auraforge.site/privacy-policy" },
       { property: "og:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+      { property: "og:image:alt", content: "AuraForge — Privacy Policy" },
+      { property: "og:image:width", content: "1024" },
+      { property: "og:image:height", content: "682" },
+      { property: "og:locale", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Privacy Policy — WT&tudio" },
+      { name: "twitter:title", content: "Privacy Policy | AuraForge — Digital Growth Studio" },
       {
         name: "twitter:description",
         content:
-          "How WT&tudio collects, uses and protects your personal data, in line with the Digital Personal Data Protection Act, 2023 (India).",
+          "Read the privacy policy of AuraForge (WT&tudio) explaining how we collect, use and protect your personal data under the Digital Personal Data Protection Act, 2023 (India).",
       },
       { name: "twitter:image", content: "https://auraforge.site/og/wtstudio-preview.png" },
+      { name: "twitter:image:alt", content: "AuraForge — Privacy Policy" },
     ],
     links: [
       { rel: "canonical", href: "https://auraforge.site/privacy-policy" },
@@ -99,6 +125,10 @@ const sections: { title: string; body: string[] }[] = [
 function PrivacyPolicy() {
   return (
     <div className="grain relative min-h-screen bg-background text-foreground">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(privacyBreadcrumbSchema) }}
+      />
       <Nav />
       <main className="mx-auto max-w-[1100px] px-5 pb-32 pt-40 md:px-10 md:pt-52">
         <p className="label-mono mb-8 text-primary">Legal</p>
