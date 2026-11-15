@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 
 const links = [
   { label: "Services", id: "services" },
-  { label: "Why us", id: "studio" },
+  { label: "Why us", id: "why-us", aliasId: "studio" },
   { label: "Process", id: "process" },
   { label: "Pricing", id: "packages" },
   { label: "Contact", id: "contact" },
@@ -21,7 +21,9 @@ export function Nav() {
       setScrolled(window.scrollY > 20);
       let cur = "";
       for (const l of links) {
-        const el = document.getElementById(l.id);
+        const el =
+          document.getElementById(l.id) ||
+          (l.aliasId ? document.getElementById(l.aliasId) : null);
         if (el && el.getBoundingClientRect().top <= 160) cur = l.id;
       }
       setActive(cur);
@@ -32,6 +34,26 @@ export function Nav() {
   }, []);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
+    const hash = window.location.hash.replace(/^#/, "");
+    if (!hash) return;
+    const timer = setTimeout(() => {
+      const el =
+        document.getElementById(hash) ||
+        (hash === "why-us" ? document.getElementById("studio") : null) ||
+        (hash === "studio" ? document.getElementById("why-us") : null);
+      if (el) {
+        const navHeight = 90;
+        const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+        const matched = links.find((l) => l.id === hash || l.aliasId === hash);
+        if (matched) setActive(matched.id);
+      }
+    }, 150);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
@@ -39,13 +61,38 @@ export function Nav() {
   }, [open]);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    if (window.location.pathname === "/" || window.location.pathname === "") {
+    const isHomePage =
+      typeof window !== "undefined" &&
+      (window.location.pathname === "/" ||
+        window.location.pathname === "" ||
+        window.location.pathname === "/index.html");
+
+    if (isHomePage) {
       e.preventDefault();
-      const el = document.getElementById(id);
+      const targetId = id.replace(/^#/, "");
+      const link = links.find((l) => l.id === targetId || l.aliasId === targetId);
+      const aliasId = link?.aliasId;
+
+      const el =
+        document.getElementById(targetId) ||
+        (aliasId ? document.getElementById(aliasId) : null) ||
+        (targetId === "why-us" ? document.getElementById("studio") : null) ||
+        (targetId === "studio" ? document.getElementById("why-us") : null);
+
       if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-        history.pushState(null, "", `/#${id}`);
-        setActive(id);
+        const navHeight = 90;
+        const rect = el.getBoundingClientRect();
+        const targetScrollTop = rect.top + window.scrollY - navHeight;
+
+        window.scrollTo({
+          top: Math.max(0, targetScrollTop),
+          behavior: "smooth",
+        });
+
+        history.pushState(null, "", `/#${targetId}`);
+        setActive(targetId);
+      } else {
+        window.location.hash = targetId;
       }
     }
   };
@@ -68,7 +115,7 @@ export function Nav() {
               href={`/#${l.id}`}
               onClick={(e) => handleNavClick(e, l.id)}
               aria-current={active === l.id ? "true" : undefined}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
+              className={`cursor-pointer select-none rounded-full px-4 py-2 text-sm font-medium transition-all ${
                 active === l.id ? "bg-foreground text-background" : "text-muted-foreground hover:bg-foreground/5 hover:text-foreground"
               }`}
             >
