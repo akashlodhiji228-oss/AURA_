@@ -1,6 +1,9 @@
-# Aura Forge Digital Studio
+# WT&tudio — Digital Growth Studio
 
-create a minimal website for my Agency called "AURA_FORGE" we will these services in our agency (Digital Marketing Agency+Digital Marketing Agency+App Development Agency+Branding Agency+Creative Agency+Social Media Agency+Advertising Agency+AI Agency+Automation Agency+Software Development Agency+UI/UX Design Agency+Content Agency+Video Production Agency+Influencer/Creator Agency+Video Production Agency+Recruitment Agency+Growth Agency+E-commerce Agency+Design Agency+Development/Real Estate Marketing Agenc+Full-Service Agency) use above color combination I want something unique client/customer friendly (Contact - 7869461895 as whatsApp. or mail = officialauraforge@gmail.com)
+Official website for WT&tudio (What The Studio) — design, technology & growth studio.
+
+- **Website**: https://auraforge.site
+- **Contact**: +91-7067558299 | whathestudio2026@gmail.com
 
 This project was built with [Lovable](https://lovable.dev).
 
